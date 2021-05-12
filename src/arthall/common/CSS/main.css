@@ -1,0 +1,429 @@
+@charset "UTF-8";
+
+
+/*메인 비주얼 슬라이드*/
+.mainVisual{
+    position: relative;
+    width: 100%;
+    height: 937px;
+    overflow: hidden;
+    /*top: -10px;*/
+    top: 0px;
+    background: #000;
+    z-index: 40
+}
+.mainVisual .visualView{
+    font-size: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 937px;
+    /*z-index: 2;*/
+
+}
+.mainVisual .visualView > div{
+    position: absolute;
+    top: 0;
+    transition: all 0.5s;
+    height:100%;
+}
+
+.mainVisual .visualView > .bg1{
+    /*background-image: url(../../img/main/img_main_visual1.jpg);*/
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y:bottom;
+    width: 20%;
+    height: 937px;
+    left: 0%;
+}
+.mainVisual .visualView > .bg2{
+    /*background-image: url(../../img/main/img_main_visual2.jpg);*/
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y:bottom;
+    width: 20%;
+    height: 937px;
+    left: 20%;
+}
+.mainVisual .visualView > .bg3{
+    /*background-image: url(../../img/main/img_main_visual3.jpg);*/
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y:bottom;
+    width: 20%;
+    height: 937px;
+    left: 40%;
+}
+.mainVisual .visualView > .bg4{
+    /*background-image: url(../../img/main/img_main_visual4.jpg);*/
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y:bottom;
+    width: 20%;
+    height: 937px;
+    left: 60%;
+}
+.mainVisual .visualView > .bg5{
+    /*background-image: url(../../img/main/img_main_visual5.jpg);*/
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y:bottom;
+    width: 20%;
+    height: 937px;
+    left: 80%;
+}
+.mainVisual .visualView > div.show{
+    width: 100%;
+    z-index: 2;
+}
+
+.mainVisual .visual {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 937px;
+}
+.mainVisual .visual > div {
+    float: left;
+    width: 20%;
+    height: 100%;
+    position: relative;
+    box-sizing: border-box;
+}
+.mainVisual .visual > div:last-child{border-right: none;}
+
+/*메인슬라이드 텍스트섹션*/
+.mainVisual .textView {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background: #7c6c5d;
+    height: 35%;
+    box-sizing: border-box;
+    padding: 30px;
+}
+
+/*텍스트 섹션 배경,폰트색*/
+.mainVisual .bg1 .textView{background:#4682B4;color:#B0C4DE;}
+.mainVisual .bg2 .textView{color:#FAEBD7;}
+.mainVisual .bg3 .textView{background:#800000;color:#FFB6C1;}
+.mainVisual .bg4 .textView{background:#9ACD32;color:#F0FFF0;}
+.mainVisual .bg5 .textView{background:#663399;color:#D8BFD8;}
+
+/*텍스트 섹션 배경, 폰트 hover색*/
+.mainVisual .bg1 .textView p a{color:#4682B4;}
+.mainVisual .bg1 .textView p a:hover{background:#4682B4;color:#B0C4DE;}
+.mainVisual .bg2 .textView p a{color:#7c6c5d;}
+.mainVisual .bg2 .textView p a:hover{background:#594735;color:#FAEBD7;}
+.mainVisual .bg3 .textView p a{color:#800000;}
+.mainVisual .bg3 .textView p a:hover{background:#B22222;color:#FFB6C1;}
+.mainVisual .bg4 .textView p a{color:#9ACD32;}
+.mainVisual .bg4 .textView p a:hover{background:#6B8E23;color:#F0FFF0;}
+.mainVisual .bg5 .textView p a{color:#663399;}
+.mainVisual .bg5 .textView p a:hover{background:#8656a2;color:#D8BFD8;}
+
+.mainVisual .textView.on{
+    display: block;
+}
+/*메인슬라이드 텍스트섹션-컨텐츠(변경200730)*/
+.mainVisual .textView > span{
+    font-size: 16px;
+}
+.mainVisual .textView h2{
+    margin: 10px 0;
+    font-size: 26px;
+    font-weight: bold;
+}
+.mainVisual .textView p:nth-of-type(1){
+    margin: 10px 0;
+    line-height: 2;
+    font-size: 15px;
+}
+.mainVisual .textView p:nth-of-type(2){
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+    right: 20px;
+}
+.mainVisual .textView p a{
+    display: block;
+    float: left;
+    width: 49%;
+    height: 50px;
+    margin-right: 2%;
+    line-height: 50px;
+    text-align: center;
+
+    background-color:rgba(255,255,255,0.7);
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.9) inset;
+    border-radius:5px;
+    font-size: 16px;
+    font-weight:bold; 
+    color: #272727;
+    
+}
+.mainVisual .textView p a:last-child{margin-right: 0}
+/******/
+
+.mainVisual .visual > div:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 1px;
+    background: rgba(255,255,255,0.1);
+}
+
+/*메인비주얼슬라이드 끝*/
+
+
+/*메인 퀵아이콘*/
+
+main section .section__wrap{
+    max-width: 1260px;
+    margin: 0 auto;
+}
+
+main .icons{padding: 50px 0;}
+.icons ul li{
+    float: left;
+    width: 14.2857%;
+}
+.icons li a{
+    display: block;
+    height: 100%;
+    padding: 20px 0;
+    text-align: center;
+    transition: all 0.5s;
+}
+.icons ul li i{display: block;margin-bottom: 10px;}
+
+.icons li a:hover{
+    color: #d32e2e;
+    font-weight:bold;
+    transform:translateY(-15px)
+}
+
+/*메인 퀵아이콘 끝*/
+
+/*퀵아이콘 하단 공연전시포스터 슬라이드*/
+
+.showInfo{
+    padding: 50px 0;
+    text-align: center;
+    background:#d32e2e;
+}
+.showInfo .showInfo__tit{
+    margin: 15px 0;
+    font-size: 50px;
+    font-weight:bold;
+    color:#670c0c;
+}
+.showInfo>.showInfo__wrap>p{
+    margin-bottom: 30px;
+    font-size: 18px;
+    color:#670c0c;
+}
+
+.showInfo__slide{
+    position: relative;
+}
+.showInfo__slide .slide__btns{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 45px;
+    transform: translate(-50%,-50%);
+}
+.slide__btns > button{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.slide__btns .btns__rightBtn{
+    left: auto; right: 0;
+}
+.slide__btns .btns__rightBtn:hover,
+.slide__btns .btns__leftBtn:hover{color:#fff;}
+
+.showInfo__slide .slide__show{
+    width: 1100px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.showInfo__slide .show__showList{
+    position:relative;
+    left:0;
+    width: 2400px;
+}
+.show__showList .showList__cont{
+    position: relative;
+    float: left;
+    width: 212px;
+    height: 400px;
+    margin-right: 10px;
+    background-size:cover;
+}
+
+/*각 슬라이드 이미지적용*/
+.slide1{background-image: url(../../../img/poster/pos1.jpg); background-repeat: no-repeat;  background-position-x: center;}
+.slide2{background-image: url(../../../img/poster/pos2.jpg); background-repeat: no-repeat;  background-position-x: center;}
+.slide3{background-image: url(../../../img/poster/pos3.jpg); background-repeat: no-repeat;  background-position-x: center;}
+.slide4{background-image: url(../../../img/poster/pos4.jpg); background-repeat: no-repeat;  background-position-x: center;}
+.slide5{background-image: url(../../../img/poster/pos5.jpg); background-repeat: no-repeat;  background-position-x: center;}
+.slide6{background-image: url(../../../img/poster/pos6.jpg); background-repeat: no-repeat;  background-position-x: center;}
+.slide7{background-image: url(../../../img/poster/pos7.jpg); background-repeat: no-repeat;  background-position-x: center;}
+.slide8{background-image: url(../../../img/poster/pos8.jpg); background-repeat: no-repeat;  background-position-x: center;}
+.slide9{background-image: url(../../../img/poster/pos9.jpg); background-repeat: no-repeat;  background-position-x: center;}
+.slide10{background-image: url(../../../img/poster/pos10.jpg); background-repeat: no-repeat;  background-position-x: center;}
+/*각 슬라이드 이미지적용 끝*/
+
+
+
+
+.show__showList .showList__cont:last-child{margin-right: 0;}
+.showList__cont .cont__wrap{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    opacity: 0;
+    transition: all 0.5s;
+}
+.showList__cont .cont__wrap:hover{opacity: 1}
+.cont__wrap .wrap__inner{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
+    color: #fff;
+}
+.wrap__inner h3{
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight:bold;
+}
+.wrap__inner p{
+    margin-bottom: 15px;
+    font-size: 13px;
+}
+.wrap__inner > a{
+    display: inline-block;
+    margin-right: 8px;
+    padding: 5px 10px;
+    background: #cb1111;
+    border-radius: 5px;
+}
+.wrap__inner > a:hover{
+    background-color:#fff;
+    color:#d32e2e;
+    font-weight:bold;
+}
+.wrap__inner > a:nth-last-of-type(2){margin-right: 0;}
+
+/*퀵아이콘 하단 공연전시포스터 슬라이드끝*/
+
+/*새소식, 이벤트 섹션*/
+.news article{
+    float: left;
+    width: 50%;
+    height: 467.98px;
+    padding: 50px 10px;
+    box-sizing: border-box;
+}
+.news article > div{float: left; height: 100%;}
+.news .text{
+    position: relative;
+    width: 30%;
+    padding-bottom:15px;
+    box-sizing: border-box;
+}
+.news .text span{
+    position: relative;
+    display: inline-block;
+    margin: 10px 0 20px;
+}
+.news .text span:after{
+    position: absolute;
+    top: -10px;
+    left: 0;
+    display: block;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: #4d4d4d;
+}
+.news .text h2{margin-bottom: 15px; font-size: 20px; font-weight:bold;}
+.news .text p{font-size: 13px; word-break: keep-all;}
+
+.notice__more, .event__btns{
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+}
+.news .cont{
+    width: 70%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+
+.news .cont table{
+    width: 100%;
+    height: 100%;
+    padding-right: 10px;
+    box-sizing: border-box;
+    table-layout: fixed;
+}
+.news .cont tr{
+    height: 20%;
+    border-top: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.news .cont tr:hover{
+    background-color:#eee;
+    
+}
+.news .cont tr:last-child{border-bottom: 1px solid #ccc;}
+.news .cont td:nth-child(1){width: 70%;}
+.news .cont td > a{
+    overflow: hidden;
+    display: block;
+    height: 100%;
+    line-height: 73px;
+    padding: 0 10px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.news .cont td:nth-child(2){width: 30%; text-align: center;}
+
+
+.news__event .cont{overflow: hidden;}
+.news__event .cont ul{width:1011.3332px }
+.news__event .cont li{
+    float: left;
+    width: 245.3333px;
+    margin-right: 10px;
+    overflow: hidden;
+}
+.news__event .cont li:last-child{margin-right: 0;}
+.news__event .cont li img{transition: all 0.5s;}
+.news__event .cont li:hover img{transform: scale(1.2)}
+
+.text>a:hover,
+.event__btns>a:hover{color:#d32e2e;}
+/*새소식, 이벤트 섹션 끝*/

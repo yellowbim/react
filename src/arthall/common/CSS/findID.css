@@ -1,0 +1,162 @@
+@charset "UTF-8";
+
+@import url(reset.css);
+@import url(header.css);
+@import url(footer.css);
+@import url(topBtn.css);
+
+.sub__tit{
+    position: relative;
+    height: 350px;
+    background:url(../img/topBg/topBg_member.jpg);
+}
+.sub__tit h2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50%);
+    font-size:24px;
+    font-weight:bold;
+    color:#fff;
+}
+
+.sub__container{
+    max-width: 1260px;
+    height: auto;
+    margin: 50px auto;
+}
+
+
+/*main{width: 1060px;}*/
+
+
+main .main__content{
+    padding: 50px 0;
+    text-align: center;
+}
+
+.content__innerConts .innerConts__tit{
+    font-size: 42px;
+    font-weight:bold;
+    margin-bottom: 20px;
+}
+
+.content__innerConts > p{
+    margin-bottom:50px;
+    font-size: 16px;
+    word-break: keep-all;
+}
+
+.innerConts__cont .cont__find{
+    position: relative;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.innerConts__cont .cont__find:before{
+    position: absolute;
+    top: -25px;
+    left: 0;
+    display: block;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: #222;
+}
+
+.cont__find .find__list li{
+    float: left;
+    width: 50%;
+    background: #aaa;
+    color: #fff;
+    border-bottom: 1px solid #222;
+    box-sizing: border-box;
+}
+.cont__find .find__list li.on{
+    background: #fff;
+    color: #222;
+    border: 1px solid #222;
+    border-bottom: none;
+}
+.find__list li > a{
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+}
+
+.form__info{margin: 50px 0;}
+
+.info__inputs li{
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: 20px;
+    border: 1px solid #222;
+}
+.info__inputs li:hover{
+    background-color:#eee;
+}
+.info__inputs li:last-child{margin-bottom: 0;}
+
+.info__inputs li label,
+.info__inputs li input{
+    float: left;
+    height: 100%;
+}
+.info__inputs li label{
+    width: 15%;
+    background: #222;
+    color: #fff;
+}
+.info__inputs li input{
+    width: 85%;
+    padding: 10px 15px;
+    box-sizing: border-box;
+}
+form .form__submit{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-size:18px;
+    background: #222;
+    color: #fff;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition:all 0.5s;
+}
+
+form .form__submit:hover{
+    background:#d32e2e;
+    color:#fff; 
+}
+
+/*아이디찾기 결과창*/
+.innerConts__cont .idResult{
+    width:500px;
+    height:200px;
+    font-size:16px;
+}
+.innerConts__cont .idResult span{
+    font-size:24px;
+    font-weight:bold;
+    color:#d32e2e;
+}
+.idResultBtn{width:500px;height:100px;}
+.idResultBtn a{
+    display:block;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: 10px;
+    background: #222;
+    color: #fff;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size:18px;
+    transition:all 0.5s
+}
+.idResultBtn a:hover{
+    background-color:#d32e2e;
+    color:#fff;
+}

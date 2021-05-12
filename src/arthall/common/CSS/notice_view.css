@@ -1,0 +1,156 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
+@import url(reset.css);
+@import url(header.css);
+@import url(footer.css);
+@import url(topBtn.css);
+
+/*상단 타이틀*/
+.sub__tit{
+    position: relative;
+    height: 350px;
+    background: url(../img/news_bg.jpg) center -800px;
+    background-size: cover;
+}
+.sub__tit h2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50%);
+    font-size:24px;
+    font-weight:bold;
+    color:#fff;
+}
+
+.sub__container{
+    max-width: 1260px;
+    height: auto;
+    margin: 0 auto;
+}
+/*html .subClass__tit에 fontawesome을 이용해 적절한 아이콘을 넣어주세요. 
+
+<h3 class="subClass__tit">
+    <i class="fas fa-guitar"></i><br>공연&middot;전시&middot;행사
+</h3>
+
+와 같은 형식이 됩니다.*/
+
+/*왼쪽 서브메뉴*/
+.sub__container{
+    max-width: 1260px;
+    height: auto;
+    margin: 0 auto;
+}
+.sub__container .container__subClass,
+.sub__container main {float: left;}
+
+.sub__container .container__subClass{
+    height: 100%;
+}
+
+.container__subClass .subClass__tit{
+    width:180px;
+    height:180px;
+    text-align: center;
+    font-size: 20px;
+    font-weight:bold;
+    background-color:#222;
+    color:#888;
+}
+.container__subClass .subClass__tit i{
+    font-size:72px;
+    margin:30px 0 10px 0;
+}
+
+.subClass__list li a{
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    transition: all 0.5s;
+    border-bottom:1px solid #555;
+    font-size:16px;
+    font-weight:bold;
+    color:#555;
+}
+.subClass__list li a:hover{
+    color: #eee;
+    background: #555;
+}
+
+main{width: 1060px;}
+
+main .main__siteLoad{padding: 5px;}
+.main__siteLoad a{
+    display: inline-block;
+    font-size: 13px;
+}
+
+main .main__content{
+    padding: 50px 0;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.main__content .cont__tit{
+    font-size: 30px;
+    margin-bottom: 10px;
+    padding-top: 15px;
+    font-weight: bold;
+    border-top: 2px solid #000;
+}
+
+.main__content .cont__tit_date{
+    display: block;
+    font-size: 16px;
+    word-break: keep-all;
+    margin-bottom: 15px;
+}
+
+.view_text{
+    box-sizing: border-box;
+    padding: 40px 0 70px;
+    text-align: justify;
+    border-top: 1px solid rgba(0,0,0,0.3);
+}
+.paging_view{
+    border-top: 1px solid rgba(0,0,0,0.3);
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+    box-sizing: border-box;
+    padding: 20px 0;
+    color: #666;
+}
+.paging_view > a{
+    display: block;
+    margin-bottom: 5px;
+}
+.paging_view > a:last-child{margin-bottom: 0;}
+.paging_view a strong{
+    margin-right: 10px;
+    font-weight: normal;
+}
+.paging_view > a:hover span{font-weight: bold;}
+
+.paging_prev{
+    text-align: right;
+    margin-top: 30px;
+}
+.paging_prev a{
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border: 1px solid #4d4d4d;
+}
+.paging_prev a i{
+    margin-right: 10px;
+}
+.paging_prev a:hover{
+    background: #4d4d4d;
+    color: #fff;
+}

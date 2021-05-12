@@ -1,0 +1,12 @@
+.thead {
+    border: 1px;
+}
+
+.td10 {width: 10%;text-align: center;}
+
+.td2 {width: 25px;}
+
+.test {
+    border: 0.1px;
+    background-color: #61dafb;
+}

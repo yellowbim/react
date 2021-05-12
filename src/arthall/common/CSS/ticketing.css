@@ -1,0 +1,314 @@
+@charset "UTF-8";
+
+
+.sub__tit{
+    position: relative;
+    height: 350px;
+    background: #ccc;
+}
+.sub__tit h2{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50%);
+}
+
+.sub__container{
+    width: 1260px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.sub__container .container__subClass,
+.sub__container main {float: left;}
+
+.sub__container .container__subClass{
+    width: 200px;
+    height: 100%;
+    background: gold;
+}
+.container__subClass .subClass__tit{
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    font-size: 30px;
+    background: skyblue;
+}
+
+.subClass__list li a{
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    transition: all 0.5s;
+}
+.subClass__list li a:hover{
+    color: #7fceff;
+    background: #434343;
+}
+
+main{width: 1060px;}
+
+main .main__siteLoad{padding: 5px;}
+.main__siteLoad a{
+    display: inline-block;
+    font-size: 13px;
+}
+
+main .main__content{
+    padding: 50px 0;
+    text-align: center;
+}
+
+.content__innerConts .innerConts__tit{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+
+.ticketBox .ticketBox__titArea{
+    padding: 0 50px;
+    box-sizing: border-box;
+    background: pink;
+}
+.ticketBox .ticketBox__titArea h4{
+    float: right;
+    width: 300px;
+    background: #ccc;
+}
+
+.ticketBox__ticketBoxInner .ticketBoxInner__tit{
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.ticketBox__titArea .ticketInfo{
+    float: left;
+    width: 65%;
+    height: 51px;
+    line-height: 51px;
+    border-bottom: 1px solid #ccc;
+    background: gold;
+}
+.ticketInfo .ticketBoxInner__tit{}
+.ticketInfo p{float: left; height: 100%;}
+.ticketInfo p .ticketInfo__showName{
+    margin: 0 20px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #777;
+}
+.ticketInfo p .ticketInfo__showInfo{color: #999; vertical-align:top;}
+
+.dateInfo{margin-top: -50px;}
+.dateInfo .ticketBoxInner__tit{
+    height: 50px;
+    line-height: 50px;
+    margin-left: 50px;
+}
+
+#calendarContainer{position: relative; padding: 10px 0;}
+#calendarContainer:before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    content: '';
+    width: 100%;
+    height: 65px;
+    background: #4d4d4d;
+    
+}
+#calendarContainer .calendarContainer__calendars{width: 80%; margin: 0 auto;}
+.calendarContainer__calendars > div{
+    position: relative;
+    float: left;
+    width: 50%;
+    padding: 0 10px;
+    box-sizing: border-box;
+    z-index: 5;
+}
+.calendarContainer__calendars > div table{
+    width: 300px;
+    margin:0 auto;
+}
+.calendarContainer__calendars div:nth-child(2){border-left: 1px solid #4d4d4d;}
+
+.calendarContainer__calendars .sun{color: red;}
+.calendarContainer__calendars .sat{color: blue;}
+.calendarContainer__calendars thead .month{
+    height: 50px;
+    font-size: 25px;
+    font-weight: 700;
+    color: #fff;
+}
+.calendarContainer__calendars thead .days{
+    height: 40px;
+    font-size: 16px;
+    border-bottom: 1px solid #ccc;
+}
+.calendarContainer__calendars tbody tr{
+    height: 40px;
+    font-size: 18px;
+}
+.calendarContainer__calendars tbody td{}
+.calendarContainer__calendars .dates span{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+}
+.calendarContainer__calendars .dates.today span{background: pink; color: #fff;}
+.calendarContainer__calendars .able.active span{background: gold; color:#fff;}
+.calendarContainer__calendars .dates.disable span{opacity: 0.3; cursor: default;}
+
+
+.calBtn{
+    position: absolute;
+    top: 50%;
+    left:0;
+    right: 0;
+    height: 42px;
+    transform: translateY(-50%)
+}
+.calBtn > a{
+    position: absolute;
+    top: 0;
+    left: 30px;
+    z-index: 3;
+}
+.calBtn > .calBtn__next{
+    left: auto;
+    right: 30px;
+}
+.calBtn > a.disable{opacity: 0.3; cursor: default;}
+
+.ticketBox__choose{
+    height: 389px;
+    padding: 0 30px;
+}
+.ticketBox__choose > article{
+    float: left;
+    width: 33.3333%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.ticketBox__choose .ticketBoxInner__tit{margin-bottom: 20px;}
+
+.timeInfo .timeInfo__timeTable{
+    height: 300px;
+    overflow-y: auto;
+    /*-ms-overflow-style: none;
+    -moz-scrollbar-width: none; */
+}
+
+/*.timeInfo .timeInfo__timeTable::-webkit-scrollbar {
+    display: none;
+}*/
+
+.timeInfo__timeTable .timeTable__list {
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    text-align: left;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.timeInfo__timeTable .exhibitTimeTable {
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    text-align: left;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.timeTable__list .list__Time{padding-left: 10px; font-size: 20px;}
+.exhibitTimeTable .list__Time{padding-left: 10px; font-size: 20px;}
+
+.timeTable__list p{
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 12px;
+    border-top: 1px solid #999;
+    word-break: keep-all;
+}
+.exhibitTimeTable p{
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 12px;
+    border-top: 1px solid #999;
+    word-break: keep-all;
+}
+
+
+.timeInfo__timeTable .timeTable__list.active{
+    background: #ffc4c4;
+    border-color: red;
+}
+
+
+.classInfo .classInfo__classTable{text-align: left;}
+
+.classInfo__classTable .classTable__classList{
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+.classTable__classList .classList__seatClass{cursor: pointer;}
+.classTable__classList .classList__seatClass:before{
+    content:'\f0c8';
+    margin-right: 10px;
+    font-family: "Font Awesome 5 Free";
+}
+.classTable__classList.active{color: red;}
+.classTable__classList.active .classList__seatClass:before{content:'\f14a';}
+
+.classTable__classList .classList__seatPrice{float: right; margin-left: 10px;}
+
+.classTable__classList .classList__seatNumber{
+    display: none;
+    float: right;
+    width: 50px;
+    height: 30px;
+    line-height: 30px;
+    text-align: right;
+}
+.classTable__classList.active .classList__seatNumber{display: block; color: red;}
+
+
+.ticketInfo{background: #d4d4d4;}
+.ticketInfo .ticketInfo__form{text-align: left;}
+.form__resultBox{
+    overflow-y: auto;
+    height: 116px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #999;
+}
+.form__resultBox label{float: left; line-height: 29px;}
+.form__resultBox input{
+    float: right;
+    width: 50%;
+    height: 29px;
+    padding-right: 10px;
+    color: #444;
+    text-align: right;
+}
+.form__resultBox .resultBox__classList {display: none;}
+
+.ticketInfo__form .form__submit{
+    width: 100%;
+    height: 100px;
+    margin-top: 40px;
+    background: #d80000;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+}
+/*resultBox__price{display: none;}*/

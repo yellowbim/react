@@ -1,0 +1,361 @@
+@charset "UTF-8";
+
+@import url(reset.css);
+@import url(header.css);
+@import url(footer.css);
+@import url(topBtn.css);
+
+.innerConts__cont li{transition:all 0.5s;}
+.innerConts__cont li:hover{background-color:#eee;}
+.innerConts__cont li button{
+    transition:all 0.5s;
+}
+.innerConts__cont li.id_area button:hover,
+.innerConts__cont li.email_area button:hover,
+.innerConts__cont li.email_conf_area button:hover{
+    background-color:#fff;
+    color:#d32e2e;
+}
+
+.sub__tit{
+    position: relative;
+    height: 350px;
+    background: url(../img/mypage/mypage_tit_bg.jpg) no-repeat center -1000px;
+    background-size: cover;
+}
+.sub__tit h2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50%);
+    font-size:24px;
+    font-weight:bold;
+    color:#fff;
+}
+
+.sub__container{
+    max-width: 1260px;
+    height: auto;
+    margin: 0 auto;
+}
+
+/*왼쪽 서브메뉴*/
+.sub__container{
+    max-width: 1260px;
+    height: auto;
+    margin: 0 auto;
+}
+.sub__container .container__subClass,
+.sub__container main {float: left;}
+
+.sub__container .container__subClass{
+    height: 100%;
+}
+
+.container__subClass .subClass__tit{
+    width:180px;
+    height:180px;
+    text-align: center;
+    font-size: 20px;
+    font-weight:bold;
+    background-color:#222;
+    color:#888;
+}
+.container__subClass .subClass__tit i{
+    font-size:72px;
+    margin:30px 0 10px 0;
+}
+
+.subClass__list li a{
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    transition: all 0.5s;
+    border-bottom:1px solid #555;
+    font-size:16px;
+    font-weight:bold;
+    color:#555;
+}
+.subClass__list li a:hover{
+    color: #eee;
+    background: #555;
+}
+
+main{width: 84.1269%;}
+
+main .main__content{
+    padding: 50px 0;
+    text-align: center;
+}
+
+.content__innerConts .innerConts__tit{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.content__innerConts > p{
+    margin-bottom:50px;
+    font-size: 14px;
+    word-break: keep-all;
+}
+.content__innerConts .innerConts__cont{
+    max-width: 800px;
+    margin: 0 auto;
+}
+.main__content_tit .form_tit{
+    font-size: 40px;
+}
+
+.join_form{
+    width: 80%;
+    margin: 0 auto;
+    /*border: 1px solid red;*/
+    padding: 20px;
+}
+.form_list .star{
+    color: red;
+    float: right;
+    margin-bottom: 10px;
+}
+.form_list ul{
+    width: 100%;
+}
+.form_list ul>li{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+    display: inline-block;
+    border: 1px solid #222;
+}
+.form_list ul>li:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.form_list ul>li>label{
+    float: left;
+    display: inline-block;
+    width: 20%;
+    background: #222;
+    color: #fff;
+    height: 100%;
+    box-sizing: border-box;
+    padding-left: 2%;
+    text-align: left;
+    font-size:16px;
+    line-height:3;
+}
+.form_list ul>li.add_area>label{
+    line-height:3.3;
+}
+.form_list ul>li>label:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.form_list ul>li>label>span{
+    color: #d32e2e;
+}
+.form_list ul>li>input{
+    width: 60%;
+    height: 48px;
+    border: none;
+}
+.form_list ul>li:nth-of-type(1)>input,
+.form_list ul>li:nth-of-type(2)>input,
+.form_list ul>li:nth-of-type(3)>input,
+.form_list ul>li:nth-of-type(5)>input,
+.form_list ul>li:nth-of-type(6)>input
+{
+    width: 78%;
+}
+.form_list ul>li>button{
+    float: right;
+    background-color: #d32e2e;
+    border: none;
+    width: 18%;
+    height: 100%;
+    cursor: pointer;
+    color: #eee;
+    font-size:16px;
+}
+.form_list ul>li>button:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.form_list ul>li>div{
+    float: left;
+    /*width: 79%;*/
+    text-align: left;
+    height: 50px;
+    line-height: 3.5;
+    margin-left: 3px;
+}
+.form_list ul>li>div:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+.form_list ul>li:nth-of-type(10){
+    margin-top: 2%;
+}
+.form_list ul>li:nth-of-type(10),
+.form_list ul>li:nth-of-type(11){
+    height:20px;
+    border: none;
+    margin-bottom:0;
+}
+.form_list ul>li:nth-of-type(10):hover,
+.form_list ul>li:nth-of-type(11):hover{
+    background-color:#fff;
+}
+
+.form_list ul>li:nth-of-type(10)>input,
+.form_list ul>li:nth-of-type(11)>input
+{
+    width:14px;
+    height:14px;
+    margin-top:1px;
+    float: left;
+}
+
+.form_list ul>li:nth-of-type(10)>label,
+.form_list ul>li:nth-of-type(11)>label{
+    width: 80%;
+    float: left;
+    background: none;
+    font-size:14px;
+    color: #444;
+    padding-left: 1%;
+    line-height:1;
+}
+
+.form_list ul>li:nth-of-type(4) .sex{
+    margin-left: -13px;
+}
+.form_list ul>li:nth-of-type(4) label{
+    margin-right: 20px;
+}
+
+
+.form_list ul>li.add_area{
+    position: relative;
+    width:100%;
+    height: 200px;
+}
+.form_list ul>li.add_area label:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.form_list ul>li.add_area input{
+    position: absolute;
+    float: none;
+    top:0;
+    left:21%;
+    border-bottom: 1px solid #222;
+    height: 40px;
+    margin: 0;
+}
+
+.form_list ul>li.add_area input#sample4_postcode{
+    top:5px;
+    width: 20%;
+}
+.form_list ul>li.add_area input#post_btn{
+    top:5px;
+    left:43%;
+    width: 15%;
+    height: 43px;
+    background: #ddd;
+    border:1px solid #666;
+    color:#666;
+    cursor: pointer;
+}
+.form_list ul>li.add_area input#post_btn:hover{
+    background: #7e7e7e;
+    color: #fff;
+}
+.form_list ul>li.add_area input#sample4_roadAddress{
+    top:53px;
+    width: 77%;
+}
+.form_list ul>li.add_area input#sample4_jibunAddress{
+    top:101px;
+    width: 77%;
+}
+.form_list ul>li.add_area input#sample4_detailAddress{
+    top:149px;
+    width: 77%;
+}
+
+.form_list ul>li.email_area{
+    position: relative;
+}
+.form_list ul>li.email_area #email_id{
+    position: absolute;
+    width: 20%;
+    left: 21%;
+}
+.form_list ul>li.email_area>span{
+    position: absolute;
+    left: 43%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.form_list ul>li.email_area #email_add{
+    position: absolute;
+    left: 45%;
+    width: 20%;
+}
+.form_list ul>li.email_area #email_sel{
+    position: absolute;
+    width: 17%;
+    height: 100%;
+    padding:0 10px;
+    right:18%;
+    outline:0;
+    border:0;
+    font: 16px 'Noto Sans KR','sans-serif';
+    background-color:#444;
+    color:#fff;
+}
+
+.form_list ul>li.email_conf_area{
+	position: relative;
+}
+
+.form_list .btn_yn{
+    margin: 3% 0 3% 0;
+    width: 100%;
+    height: 50px;
+    /*line-height: 100px;*/
+}
+.form_list .btn_yn button{
+    width: 30%;
+    height: 50px;
+    font-size: 25px;
+    border: 1px solid #222;
+    cursor: pointer;
+    color: #fff;
+    transition:all 0.5s;
+}
+.form_list .btn_yn button:nth-of-type(1){
+    background: #222;
+    color: #fff;
+}
+.form_list .btn_yn button:nth-of-type(2){
+    background: #fff;
+    color: #222;
+}
+
+.form_list .btn_yn button:hover{
+    background:#d32e2e;
+    color:#fff;
+    border:1px solid #d32e2e;
+}

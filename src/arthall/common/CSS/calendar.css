@@ -1,0 +1,532 @@
+@charset 'uft-8';
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
+@import url(reset.css);
+@import url(header.css);
+@import url(footer.css);
+@import url(topBtn.css);
+
+.sub__tit{
+    position: relative;
+    height: 350px;
+    /*background: #ccc;*/
+    background: url(../img/tit_bg.jpg) 0 -250px;
+    background-size: cover;
+}
+.sub__tit h2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50%);
+    font-size:24px;
+    font-weight:bold;
+    color:#fff;
+}
+
+.sub__container{
+    max-width: 1260px;
+    height: auto;
+    margin: 0 auto;
+}
+.sub__container .container__subClass,
+.sub__container main {float: left;}
+
+.sub__container .container__subClass{
+    height: 100%;
+}
+
+.container__subClass .subClass__tit{
+    width:180px;
+    height:180px;
+    text-align: center;
+    font-size: 20px;
+    font-weight:bold;
+    background-color:#222;
+    color:#888;
+}
+.container__subClass .subClass__tit i{
+    font-size:72px;
+    margin:30px 0 10px 0;
+}
+
+.subClass__list li a{
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    transition: all 0.5s;
+    border-bottom:1px solid #555;
+    font-size:16px;
+    font-weight:bold;
+    color:#555;
+}
+.subClass__list li a:hover{
+    color: #eee;
+    background: #555;
+}
+
+main{width: 1060px;}
+
+main .main__siteLoad{
+    padding: 10px 20px;
+}
+.main__siteLoad a{
+    display: inline-block;
+    font-size: 13px;
+}
+main .main__content{
+    padding: 50px 20px;
+    text-align: center;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.search_info{
+    height: 70px;
+    margin: 0px 10px;
+}
+.search_info>ul{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+.search_info>ul>li{
+    float: left;
+    width: 33.2%;
+    height: 70px;
+    border : 1px solid #aaa;
+    /*box-shadow: 0 0 0 1px #555 inset; */
+}
+.search_info>ul>.search_info_genre{
+    /*box-shadow: 0 0 0 1px #555 initial;*/
+    /*border-style: initial; */
+    border-right: none;
+    border-left: none;
+}
+
+/*날짜 선택 부분*/
+.search_info_date{
+    width: 100%;
+    height: 100%;
+    background: url(../img/input_date_bg.png);
+    background-size: cover;
+}
+.search_info_date>ul{
+    width: 100%;
+    height: 70px;
+}
+.search_info_date>ul>.date_select{
+    float: left;
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+.search_info_date>ul>.date_select>label{
+    display: none;
+}
+.search_info_date>ul>.date_select>input{
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-indent: 10px;
+    color: #333;
+}
+
+.search_info_date .search_info_date_start .datebox_01{
+    /*display: block;*/
+    display: none;
+    width: 270px;
+    height: auto;
+}
+
+/*datepicker 디자인*/
+.ui-datepicker{
+    background-color: #fff;
+    background-image: none;
+}
+.ui-datepicker-header{
+    background: #c12f30;
+    background-image: none;
+    border: 1px solid #c12f30;
+}
+.ui-datepicker-prev span.ui-icon,
+.ui-datepicker-next span.ui-icon {
+    background-image: url("https://cdn0.iconfinder.com/data/icons/flat-round-arrow-arrow-head/512/Red_Arrow_Right-512.png");
+    background-size: contain;
+    background-position: center;
+}
+.ui-datepicker-prev span.ui-icon {
+    transform: rotate(180deg);
+}
+.ui-widget-header{
+    background-image: none;
+}
+.ui-widget-header a {
+    background-image: none;
+}
+.ui-widget-content a{
+    background-image: none;
+}
+.ui-widget-header .ui-icon {
+    background-image: none;
+}
+.ui-icon, .ui-widget-content .ui-icon{
+    background-image: none;
+}
+.ui-widget-content{
+    background: #eee;
+    background-image: none;
+}
+.ui-widget-content .ui-state-default{
+    text-align: center;
+    color: #000;
+}
+.ui-widget-content .ui-state-default:hover{
+    background: #c12f30;
+    color: #fff;
+    border: 1px solid gray;
+}
+.ui-widget-content .ui-state-active{
+    background: #F78181;
+    color: #fff;
+}
+.ui-state-active, 
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active, a.ui-button:active,
+.ui-button:active, 
+.ui-button.ui-state-active:hover{
+    border: 1px solid gray;
+    background-image: none;
+}
+
+.ui-state-highlight, 
+.ui-widget-content .ui-state-highlight,
+.ui-widget-header .ui-state-highlight {
+    border: 1px solid #fed22f;
+    background: #ffe45c;
+    color: #363636;
+}
+.ui-state-default, .ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button,
+html .ui-button.ui-state-disabled:hover, 
+html .ui-button.ui-state-disabled:active{
+    background-image: none;
+}
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus,
+.ui-button:hover,
+.ui-button:focus{
+    background-image: none;
+}
+/*장르 선택 부분*/
+.search_info_genre{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.search_info_genre>label{
+    display: none;
+}
+.search_info_genre>#theme{
+    float: left;
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    font-size: 16px;
+    cursor: pointer;
+    background: url(../img/input_theme_bg.png);
+    background-size: cover;
+    box-sizing: border-box;
+    padding: 0 30px 0 50px;
+    color: #333;
+}
+.search_info_genre .pop{
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    box-shadow: 0 0 0 1px #555; 
+    background: #fff;
+    top: 103%;
+    z-index: 10;
+    display: none;
+}
+
+.pop .pop_inner{
+    /*position: absolute;*/
+    /*left: 10%;*/
+    width: 80%;
+    height: 200px;
+    /*border: 1px solid blue;*/
+    margin: 0 auto;
+    margin-top: 50px;
+    display: block;
+}
+.pop .pop_inner>li{
+    float: left;
+    width: 50%;
+    height: 25%;
+}
+.pop .pop_inner>li>input{
+    float: left;
+    width: 30%;
+    height: 50%;
+    margin-top: 12px;
+    cursor: pointer;
+}
+.pop .pop_inner>li>label{
+    float: left;
+    font-size: 18px;
+    text-align: left;
+    cursor: pointer;
+    color: #555;
+}
+
+
+/*체크박스 디자인*/
+.pop .pop_inner input[type=checkbox]{
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+}
+.pop .pop_inner label{
+    background-image:url(../img/checkbox.png);
+}
+
+.pop .pop_inner input[type=checkbox]:checked + label {
+    background-position: 0 -25px;
+}
+
+.pop .pop_inner input[type=checkbox]+label{
+    padding-left: 30px;
+    height: 25px;
+    display: inline-block;
+    line-height: 25px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    font-size: 15px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.pop .pop_close{
+    float: right;
+    width: 30px;
+    height: 30px;
+    background: url(../img/btn_xpop.png);
+    background-size: cover;
+    text-indent: -9999px;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.pop .pop_select{
+    width: 120px;
+    height: 35px;
+    background: #d32e2e;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+    transition: all 0.5s;
+}
+.pop .pop_select:hover{
+    background: #fff;
+    color: #d32e2e;
+    border: 1px solid #d32e2e;
+}
+
+
+/*공연명 입력 부분*/
+.search_info_sr{
+    width: 100%;
+    height: 100%;
+}
+.search_info_sr>label{
+    display: none;
+}
+.search_info_sr>input{
+    width: 82%;
+    height: 100%;
+    font-size: 16px;
+    float: left;
+    margin-left: 10px;
+}
+.search_info_sr>button{
+    width: 13%;
+    height: 100%;
+    cursor: pointer;
+}
+.search_info_sr>button>i.fa-search{
+    font-size: 25px;
+    color: #555;
+}
+
+
+.all_list{
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    text-align: left;
+    margin-top: 20px;
+}
+.all_list .order_list{
+    float: left;
+    width: 50%;
+}
+.all_list .order_list a{
+    box-sizing: border-box;
+    margin-left: 10px;
+    padding: 6px 15px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+.all_list .order_list a:hover{
+    background: #7191b0;
+    color: #fff;
+}
+
+.all_list .all_list_count{
+    float: right;
+    width: 10%;
+    text-align: right;
+    margin-right: 10px;
+}
+.all_list .all_list_count strong{
+    color: #f00;
+    font-weight: bold;
+}
+
+
+.all_view{
+    width: 100%;
+    height: auto;
+}
+.all_view ul{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+.all_view ul li{
+    float: left;
+    width: 25%;
+    height: 450px;
+}
+.all_view ul li .all_view_wrap{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.all_view ul li img{
+    width: 100%;
+    height: 350px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.all_view ul li .all_view_wrap_des{
+    width: 100%;
+    height: 100px;
+    box-sizing: border-box;
+    padding: 5px 10px;
+    text-align: left;
+    color:#555;
+}
+.all_view ul li .all_view_wrap_des h3{
+    color:#222;
+    font-size: 18px;
+    font-weight:bold;
+}
+.all_view ul li .all_view_wrap_des h4{
+    font-size: 14px;
+}
+.all_view ul li .all_view_wrap_des span{
+    font-size: 14px;
+    float: left;
+}
+.all_view ul li .all_view_wrap_des span:nth-of-type(2){
+    color:#d32e2e;
+    float: right;
+}
+.all_view ul li .all_view_wrap:hover .all_view_wrap_mh{
+    opacity: 1;
+}
+
+
+/*hover 했을 때*/
+.all_view_wrap .all_view_wrap_mh{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    border:1px solid #000;
+    transition:all 0.5s;
+    opacity: 0;
+}
+
+.all_view_wrap .all_view_wrap_mh a{
+    width: 55px;
+    float: left;
+    display: block;
+    padding: 10px 25px;
+    border-radius: 5px;
+    background: #d32e2e;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-105%, -50%);
+}
+.all_view_wrap .all_view_wrap_mh a:nth-of-type(2){
+    transform: translate(5%,-50%);
+}
+.all_view_wrap .all_view_wrap_mh a:hover{
+    background-color:#fff;
+    color:#d32e2e;
+    font-weight:bold;
+}
+
+
+.pagination{
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    padding: 10px;
+}
+.pagination .pbtn{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+.pagination a:hover{
+    opacity: 0.5;
+}
+.pagination .pbtn img{
+    width: 100%;
+    height: 100%;
+    margin-top: 5px;
+}
+.pagination .pagenum{
+    padding: 5px 10px;
+}
+.pagination .pagenum.currentpage{
+    background: #444;
+    border-radius: 5px;
+    color: #fff;
+}
+
+
+

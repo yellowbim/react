@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
+@import url(reset.css);
+
+main{width: 1060px;}
+
+.main__content > h1{
+    line-height: 102.84px;
+    padding: 0 30px;
+    font-size: 2.5rem;
+}
+.main__content > h1 > img{
+    float: right;
+    width: 300px;
+}
+.paymentBox{
+    padding: 20px 30px 0;
+}
+.paymentBox > article{
+    float: left;
+    width: 33.3333%;
+    height: 373px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.paymentBox > article > h2{
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+.paymentBox > article > h2 > span{position: relative;display: inline-block;}
+.paymentBox > article > h2 > span:after{
+    position: absolute;
+    left: 120%;
+    top: 50%;
+    display: block;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: #000;
+    transform: translateY(-50%);
+}
+
+.paymentMethodContainer .paymentMethodContainer__list{
+    float: left;
+    width: 50%;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.paymentMethodContainer__list label{display: inline-block; cursor: pointer; transition: all 0.3s;}
+.paymentMethodContainer__list label:hover{color: #d32e2e;}
+.paymentMethodContainer__list.active label{color: #d32e2e;}
+.paymentMethodContainer__list label i{display: block; margin-bottom: 10px;}
+
+
+
+.paymentBox__paymentChoose .paymentCorpContainer{
+    position: relative;
+    height: 306px;
+}
+.paymentCorpContainer .paymentCorp{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+.paymentCorpContainer .paymentCorp.active{display: block;}
+.paymentCorp ul li{margin-bottom: 10px;}
+.paymentCorp ul li:last-child{margin-bottom: 0;}
+
+.paymentCorp > ul{
+    height: 125px;
+    padding: 0 10px 40px;
+    border-bottom: 1px solid #ccc;
+}
+.paymentCorp ul li select{
+    float: left;
+    width: 35%;
+}
+.paymentCorp input[type="text"],
+.paymentCorp input[type="tel"]{
+    width: 60%;
+    height: 24px;
+    margin-left: 10px;
+    padding: 0;
+    border-bottom: 1px solid #000;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+.paymentCorp .textBox{
+    margin-top: 40px;
+    word-break: keep-all;
+}
+
+#paymentForm .paymentForm__paymentInfo{padding: 0 10px 40px; border-bottom: 1px solid #ccc;}
+#paymentForm .paymentForm__paymentInfo span{
+    display: block;
+    margin-bottom: 5px;
+}
+#paymentForm .paymentForm__submit{
+    width: 100%;
+    height: 100px;
+    margin-top: 40px;
+    background: #d32e2e;
+    color: #fff;
+    font-size: 2rem;
+    box-sizing: border-box;
+    transition: all 0.5s;
+}
+#paymentForm .paymentForm__submit:hover{
+    background-color:#fff;
+    border:1px solid #d32e2e;
+    color:#d32e2e;
+}

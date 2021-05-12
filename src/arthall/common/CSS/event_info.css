@@ -1,0 +1,224 @@
+@charset 'uft-8';
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
+@import url(reset.css);
+@import url(header.css);
+@import url(footer.css);
+@import url(topBtn.css);
+/*상단 타이틀*/
+.sub__tit{
+    position: relative;
+    height: 350px;
+    /*background: #ccc;*/
+    background: url(../img/tit_bg.jpg) 0 -250px;
+    background-size: cover;
+}
+.sub__tit h2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50%);
+    font-size:24px;
+    font-weight:bold;
+    color:#fff;
+}
+
+.sub__container{
+    max-width: 1260px;
+    height: auto;
+    margin: 0 auto;
+}
+/*html .subClass__tit에 fontawesome을 이용해 적절한 아이콘을 넣어주세요. 
+
+<h3 class="subClass__tit">
+    <i class="fas fa-guitar"></i><br>공연&middot;전시&middot;행사
+</h3>
+
+와 같은 형식이 됩니다.*/
+
+/*왼쪽 서브메뉴*/
+.sub__container{
+    max-width: 1260px;
+    height: auto;
+    margin: 0 auto;
+}
+.sub__container .container__subClass,
+.sub__container main {float: left;}
+
+.sub__container .container__subClass{
+    height: 100%;
+}
+
+.container__subClass .subClass__tit{
+    width:180px;
+    height:180px;
+    text-align: center;
+    font-size: 20px;
+    font-weight:bold;
+    background-color:#222;
+    color:#888;
+}
+.container__subClass .subClass__tit i{
+    font-size:72px;
+    margin:30px 0 10px 0;
+}
+
+.subClass__list li a{
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    transition: all 0.5s;
+    border-bottom:1px solid #555;
+    font-size:16px;
+    font-weight:bold;
+    color:#555;
+}
+.subClass__list li a:hover{
+    color: #eee;
+    background: #555;
+}
+
+main{
+    width: 1060px;
+}
+main .main__content{
+    padding: 50px 20px;
+    text-align: center;
+    height: 100%;
+    margin: 0 auto;
+}
+
+
+/*여기서부터 제작*/
+
+.event_list{
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    text-align: left;
+}
+
+.event_list .event_list_count{
+    float: right;
+    width: 10%;
+    text-align: right;
+    margin-right: 10px;
+}
+.event_list .event_list_count strong{
+    color: #f00;
+    font-weight: bold;
+}
+
+
+.event_view{
+    width: 100%;
+    height: auto;
+}
+.event_view ul{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+.event_view ul li{
+    float: left;
+    width: 50%;
+    height: 400px;
+}
+.event_view ul li .event_view_wrap{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.event_view ul li img{
+    width: 100%;
+    height: 70%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.event_view ul li .event_view_wrap_des{
+    width: 100%;
+    height: 30%;
+    box-sizing: border-box;
+    padding: 5px 10px;
+    text-align: left;
+}
+.event_view ul li .event_view_wrap_des h3{
+    color:#222;
+    font-size: 18px;
+    font-weight:bold;
+}
+.event_view ul li .event_view_wrap_des p{
+    /*font-size: 17px;*/
+    font-size: 14px;
+    color: #555;
+    margin-top: 5px;
+}
+.event_view ul li .event_view_wrap_des p strong{
+    font-weight: normal;
+    color: #f00;
+}
+.event_view ul li .event_view_wrap:hover .event_view_wrap_mh{
+    opacity: 1;
+}
+
+
+/*hover 했을 때*/
+.event_view_wrap .event_view_wrap_mh{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 70%;
+    background: rgba(0,0,0,0.7);
+    opacity: 0;
+    border:1px solid #000;
+    transition:all 0.5s;
+}
+
+.event_view_wrap .event_view_wrap_mh a{
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    width: 80px;
+    height: 80px;
+    margin-top: -40px;
+    margin-left: -40px;
+    line-height: 80px;
+    border-radius: 80px;
+    border: 2px solid #fff;
+    background: rgba(255,255,255,0.2);
+    color: #fff;
+    font-size: 16px;
+}
+
+/*pagination 구현 작업중*/
+.pagination{
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    padding: 10px;
+}
+.pagination .pbtn{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+.pagination a:hover{
+    opacity: 0.5;
+}
+.pagination .pbtn img{
+    width: 100%;
+    height: 100%;
+    margin-top: 5px;
+}
+.pagination .pagenum{
+    padding: 5px 10px;
+}
+.pagination .pagenum.currentpage{
+    background: #444;
+    border-radius: 5px;
+    color: #fff;
+}
