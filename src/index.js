@@ -1,10 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
-import {BrowserRouter as Router, Route} from "react-router-dom";
 import DevRouter from "./devRouter/DevRouter";
-// import PAGINGTEST from './PagingTest';
-// import INDEXMAIN from './arthall/indexMain';
 import './arthall/common/CSS/header.css';
 
 ReactDOM.render(

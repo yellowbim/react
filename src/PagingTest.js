@@ -3,11 +3,9 @@ import {BrowserRouter as Router, Route, Link} from "react-router-dom";
 import KaKaoLogin from "./components/kkaoLogin/kakaoLogin";
 import LoginSuccess from './components/kkaoLogin/loginSuccess';
 import SpringExcelUpload from './components/excelUpload/springExcelUpload';
-import ImgTest from './components/upload/imgTest';
 import FunctionKaKaoMap from './components/kakaoMapApi/kakaoMapApi'
-import KaKaoMapApi from "./components/kakaoMapApi/kakaoMapApi";
 import Book from './components/bookapi/book';
-import MovieApi from "./components/movie/movieApi";
+import krmovie from "./components/movie/krmovie";
 
 export default function PagingTest() {
     return (
@@ -17,7 +15,7 @@ export default function PagingTest() {
                 import MovieApi from "./components/movie/movieApi";
             */}
             <div><h1>================== 한국 영화 데이터베이스 api ==================</h1></div>
-            <MovieApi/>
+            <krmovie/>
 
             {/* 네이버 도서 검색 api */}
             {/*
